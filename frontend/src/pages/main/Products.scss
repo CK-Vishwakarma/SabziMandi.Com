@@ -1,0 +1,26 @@
+@import "../../Variables.scss";
+@import "../../Global.scss";
+
+/*=================
+    Single Product Card
+    ========================*/
+
+.category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  .categoty-links {
+  }
+}
+
+.products-card-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+}
+
+/*=================
+   End of Single Product Card
+    ========================*/

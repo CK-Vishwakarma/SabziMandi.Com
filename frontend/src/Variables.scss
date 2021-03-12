@@ -1,0 +1,38 @@
+// Colors
+
+// Primary
+
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+// Neutral
+
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+// custom colors
+$success-g: green;
+$danger-r: rgb(255, 29, 29);
+
+// font sizes
+
+$font-xsm: 1.2rem;
+$font-sm: 1.4rem;
+$font-med: 1.6rem;
+$font-default: 1.8rem;
+$font-lg: 2rem;
+$font-xlg: 2.2rem;
+
+// Transtions
+
+$transtionSecondary: all 300ms;
+$transtionPrimary: all 200ms;
+
+// linear gradients
+
+$LGgreenAndBlue: linear-gradient(to right, $LimeGreen, $BrightCyan);
+$LGblueAndGreen: linear-gradient(to right, $BrightCyan, $LimeGreen);
+$LGdarkBlueAndWhite: linear-gradient(to bottom, $DarkBlue, $White);

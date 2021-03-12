@@ -1,0 +1,175 @@
+@import "../../Variables.scss";
+@import "../../Global.scss";
+/*=================
+    Header
+    ========================*/
+
+.header {
+  background-color: $White;
+  color: $DarkBlue;
+  z-index: 100;
+  .nav {
+    .brand-logo {
+      font-weight: 700;
+      font-size: $font-lg;
+      background: $LGgreenAndBlue;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: $transtionSecondary;
+      &:hover {
+        background: $LGblueAndGreen;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .nav-items {
+      .nav-member-links {
+        display: none;
+      }
+
+      .menu-btn {
+        cursor: pointer;
+        & > span {
+          display: block;
+          background-color: $DarkBlue;
+          width: 2.6rem;
+          height: 0.2rem;
+          transform-origin: 0.3rem 0.1rem;
+          transition: $transtionSecondary;
+
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        &.open {
+          > span:first-child {
+            transform: rotate(45deg);
+          }
+          > span:nth-child(2) {
+            opacity: 0;
+          }
+          > span:last-child {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=================
+   Menus Component
+    ========================*/
+
+.overlay {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $LGdarkBlueAndWhite;
+  z-index: inherit;
+  transition: $transtionPrimary;
+  opacity: 0;
+  overflow-x: scroll;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .aside {
+    z-index: 110;
+    background-color: $White;
+    margin: 1rem;
+    padding: 3rem 01rem;
+    border-radius: 0.5rem;
+    transform: translateX(120%);
+    transition: $transtionSecondary;
+    opacity: 0;
+
+    &.open {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+}
+/*=================
+    End of Menus Component
+    ========================*/
+
+/*=================
+     DropDown Component
+    ========================*/
+.dropdown {
+  transition: $transtionPrimary;
+  border-left: 0rem solid $DarkBlue;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  &:hover {
+    border-left: 1rem solid $DarkBlue;
+  }
+  li {
+    padding: 1rem 1.5rem;
+    &:hover {
+      background-color: $LightGrayishBlue;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      transition: $transtionPrimary;
+
+      .icon {
+        font-size: $font-lg;
+      }
+    }
+  }
+}
+
+/*=================
+    End of DropDown Component
+    ========================*/
+
+/*=================
+    Sub-Menu Component
+    ========================*/
+
+.sub-menu {
+  li {
+    padding: 1rem 1.5rem;
+    border-left: 0rem solid $DarkBlue;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    &:hover {
+      border-left: 1rem solid $DarkBlue;
+      background-color: $LightGrayishBlue;
+      transition: $transtionPrimary;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      transition: $transtionPrimary;
+
+      .icon {
+        font-size: $font-lg;
+      }
+    }
+  }
+}
+/*=================
+    End Of Sub-Menu Component
+    ========================*/
+
+/*=================
+   End of Header
+    ========================*/

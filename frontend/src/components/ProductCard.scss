@@ -1,0 +1,78 @@
+@import "../Variables.scss";
+@import "../Global.scss";
+
+/*=================
+    Single Product Card
+    ========================*/
+
+.product-card {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  max-width: 70rem;
+  background-color: $White;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
+  .product-card-frame {
+    width: 100%;
+    height: 30rem;
+    max-height: 40rem;
+    margin-bottom: 1rem;
+
+    .product-card-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-details {
+    text-transform: capitalize;
+    // padding: 0 1rem;
+    .card-title {
+      font-size: $font-default;
+    }
+    .card-categoty {
+      font-size: $font-med;
+      margin-bottom: 0.5rem;
+    }
+    .card-rating {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 01.5rem;
+
+      .card-rating-design {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background-color: $White;
+        padding: 0.7rem 1rem;
+        border-bottom: 01rem solid $success-g;
+        border-radius: 0.5rem;
+        font-size: $font-med;
+        font-weight: 400;
+      }
+      .card-reviews {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      > span {
+        margin-right: 1rem;
+      }
+    }
+    .card-price {
+      font-size: $font-xlg;
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}
+/*=================
+   End of Single Product Card
+    ========================*/
