@@ -12,11 +12,17 @@ const Navbar = () => {
   const closeMenu = () => {
     setClick(false);
   };
+
+  if (click) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "initial";
+  }
   return (
     <>
       <nav className="container nav flexBox jcspb h-100">
         <Link to="/" className="brand-logo">
-          SabziMandi
+          SabziMandi.com
         </Link>
         <div className="nav-items">
           <Link className="nav-member-links" to="/login">

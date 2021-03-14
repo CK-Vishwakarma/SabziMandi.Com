@@ -4,13 +4,20 @@
 /*=================
     Single Product Card
     ========================*/
-
+// .products-page {
+//   position: relative;
+// }
 .category-section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
+  background-color: $White;
+  margin: 1rem 0;
   .categoty-links {
+    background-color: $VeryLightGray;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
   }
 }
 

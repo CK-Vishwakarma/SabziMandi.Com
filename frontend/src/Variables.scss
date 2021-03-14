@@ -12,9 +12,10 @@ $GrayishBlue: hsl(233, 8%, 62%);
 $LightGrayishBlue: hsl(220, 16%, 96%);
 $VeryLightGray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
-
+$orange: #ffbd33;
+$titleCol: black;
 // custom colors
-$success-g: green;
+$success-g: #249449;
 $danger-r: rgb(255, 29, 29);
 
 // font sizes
@@ -28,8 +29,10 @@ $font-xlg: 2.2rem;
 
 // Transtions
 
-$transtionSecondary: all 300ms;
-$transtionPrimary: all 200ms;
+$transtionPrimary: all 200ms ease;
+$transtionSecondary: all 300ms ease;
+$transtion500ms: all 500ms ease;
+$transtion1000ms: all 1000ms ease;
 
 // linear gradients
 

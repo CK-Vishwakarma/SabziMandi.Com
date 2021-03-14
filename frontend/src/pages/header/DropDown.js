@@ -12,12 +12,12 @@ const DropDown = ({ item, closeMenu }) => {
   return (
     <>
       <ul className="dropdown">
-        <li className="flexBox jcspb">
+        <li className="flexBox jcspb" onClick={handleDropdown}>
           <Link to={item.path} className={item.cname} onClick={closeMenu}>
             <span className="icon">{item.linkIcon}</span>
             <span className="mx-1">{item.title}</span>
           </Link>
-          <span onClick={handleDropdown} className="gridBox">
+          <span className="gridBox">
             {item.subMenu ? (
               dropdown ? (
                 <AiFillCaretUp />
@@ -33,7 +33,7 @@ const DropDown = ({ item, closeMenu }) => {
           dropdown &&
           item.subMenu.map((menu, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link
                   to={menu.path}
                   className={menu.cname}

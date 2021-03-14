@@ -1,0 +1,150 @@
+@import "../../../Variables.scss";
+@import "../../../Global.scss";
+
+/*=================
+    Single Product Info
+    ========================*/
+
+.single-product-info {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  background-color: $White;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
+  .single-product-frame {
+    width: 100%;
+    height: 30rem;
+    // max-height: 40rem;
+    margin-bottom: 1rem;
+
+    .single-product-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .single-product-details {
+    text-transform: capitalize;
+    // padding: 0 1rem;
+    .single-product-title {
+      font-size: $font-default;
+      color: $DarkBlue;
+    }
+    .single-product-categoty {
+      font-size: $font-med;
+      margin-bottom: 0.5rem;
+    }
+    .single-product-rating {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 01.5rem;
+
+      .single-product-rating-design {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background-color: $White;
+        padding: 0.7rem 1rem;
+        border-bottom: 01rem solid $success-g;
+        border-radius: 0.5rem;
+        font-size: $font-med;
+        font-weight: 400;
+        box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
+      }
+      .single-product-reviews {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      & > span {
+        margin-right: 1rem;
+      }
+    }
+    .single-product-price {
+      font-size: $font-xlg;
+      strong {
+        font-weight: 500;
+      }
+    }
+    .action-section {
+      // margin: 5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > button {
+        padding: 0.8rem 3rem;
+        margin: 2rem 2rem;
+      }
+    }
+  }
+}
+/*=================
+   End of Single Product Info
+    ========================*/
+
+/*=================
+Responsive Code 
+*********** DeskTop *********
+    ========================*/
+@media screen and (min-width: 1024px) {
+  .single-product-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    .single-product-frame {
+      display: grid;
+      place-items: center;
+      width: 40%;
+      height: 100%;
+      .single-product-img {
+        object-fit: contain;
+      }
+    }
+    .single-product-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%;
+      padding: 1rem 5rem;
+
+      .single-product-title {
+        font-size: $font-xlg;
+        color: $DarkBlue;
+      }
+
+      .single-product-rating {
+        margin: 2rem 0 1.5rem 0;
+        .single-product-rating-design {
+          position: static;
+        }
+      }
+
+      .action-section {
+        margin: 2rem 0;
+        justify-content: flex-start;
+        & > button {
+          padding: 1rem 3rem;
+          margin: 2rem 2rem 2rem 0;
+        }
+      }
+    }
+  }
+}
+// ===================================
+
+/*=================
+Responsive Code 
+*********** Tablet *********
+    ========================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}

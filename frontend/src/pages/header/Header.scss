@@ -7,7 +7,15 @@
 .header {
   background-color: $White;
   color: $DarkBlue;
-  z-index: 100;
+  position: relative;
+  .header_fixed {
+    background-color: $White;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 6rem;
+    z-index: 1000;
+  }
   .nav {
     .brand-logo {
       font-weight: 700;
@@ -26,6 +34,24 @@
     .nav-items {
       .nav-member-links {
         display: none;
+        color: $DarkBlue;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 3rem;
+          width: 0;
+          height: 0.3rem;
+          background: $LGgreenAndBlue;
+          opacity: 0;
+          transition: $transtionSecondary;
+        }
+        &:hover {
+          &::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
       }
 
       .menu-btn {
@@ -62,33 +88,51 @@
 /*=================
    Menus Component
     ========================*/
-
+.overlay-desktop {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: $transtionPrimary;
+  opacity: 0;
+  background: $LGdarkBlueAndWhite;
+  overflow-y: scroll;
+  visibility: hidden;
+  &.open {
+    opacity: 0.5;
+    visibility: visible;
+  }
+}
 .overlay {
   position: fixed;
   top: 6rem;
   left: 0;
   right: 0;
   bottom: 0;
-  background: $LGdarkBlueAndWhite;
-  z-index: inherit;
+  background: transparent;
+  width: 100%;
+  z-index: 1000;
   transition: $transtionPrimary;
   opacity: 0;
-  overflow-x: scroll;
+  overflow-y: scroll;
   visibility: hidden;
-
   &.open {
     opacity: 1;
     visibility: visible;
   }
   .aside {
-    z-index: 110;
+    z-index: 1100;
     background-color: $White;
+    height: fit-content;
     margin: 1rem;
     padding: 3rem 01rem;
     border-radius: 0.5rem;
     transform: translateX(120%);
     transition: $transtionSecondary;
     opacity: 0;
+    box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
 
     &.open {
       transform: translateX(0%);
@@ -106,6 +150,7 @@
 .dropdown {
   transition: $transtionPrimary;
   border-left: 0rem solid $DarkBlue;
+  color: $DarkBlue;
 
   &:not(:last-child) {
     margin-bottom: 0.5rem;
@@ -124,6 +169,7 @@
       align-items: center;
       text-transform: capitalize;
       transition: $transtionPrimary;
+      color: $DarkBlue;
 
       .icon {
         font-size: $font-lg;
@@ -159,6 +205,8 @@
       align-items: center;
       text-transform: capitalize;
       transition: $transtionPrimary;
+      color: $DarkBlue;
+      padding-left: 01rem;
 
       .icon {
         font-size: $font-lg;
@@ -173,3 +221,101 @@
 /*=================
    End of Header
     ========================*/
+
+//======================================================================
+//======================================================================
+//======================================================================
+
+/*=================
+   Resposive for Desktop
+    ========================*/
+@media screen and (min-width: 1024px) {
+  /*=================
+    Header
+    ========================*/
+  .header {
+    .nav {
+      .brand-logo {
+        font-size: $font-xlg;
+      }
+      .nav-items {
+        display: flex;
+        align-items: center;
+        .nav-member-links {
+          display: flex;
+          margin: 0 1rem;
+        }
+
+        .menu-btn {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  /*=================
+   Menus Component
+    ========================*/
+  .overlay {
+    display: flex;
+    justify-content: flex-end;
+    // background: transparent;
+    width: 30%;
+    right: 0;
+    left: auto;
+    .aside {
+      width: 100%;
+    }
+  }
+  /*=================
+    End of Menus Component
+    ========================*/
+}
+
+// ===================================
+
+/*=================
+Responsive Code 
+*********** Tablet *********
+    ========================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*=================
+    Header
+    ========================*/
+  .header {
+    .nav {
+      .brand-logo {
+        font-size: $font-xlg;
+      }
+      .nav-items {
+        display: flex;
+        align-items: center;
+        .nav-member-links {
+          display: flex;
+          margin: 0 1rem;
+        }
+
+        .menu-btn {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  /*=================
+   Menus Component
+    ========================*/
+
+  .overlay {
+    .aside {
+      margin: 2rem auto;
+
+      width: 70%;
+    }
+  }
+
+  /*=================
+    End of Menus Component
+    ========================*/
+}
