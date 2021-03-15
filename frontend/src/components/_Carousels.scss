@@ -1,0 +1,124 @@
+.carousels {
+  position: relative;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  height: 85vh;
+  background-color: black;
+  .slider-div {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+    transition: $transtion500ms;
+    transition-duration: 2s ease;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+    }
+    .slider-img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+      max-width: 144rem;
+      position: relative;
+    }
+    .slider-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 150;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $White;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 5rem;
+        // color: $VeryLightGray;
+        color: $LightGrayishBlue;
+        font-weight: 400;
+      }
+      button {
+        padding: 1.2rem 3.5rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        color: $DarkBlue;
+        letter-spacing: 0.1rem;
+        transition: $transtionSecondary;
+        background: white;
+
+        // animation-name: moveB;
+        // animation-duration: 1000ms;
+        // animation-iteration-count: infinite;
+        // animation-direction: alternate;
+        // animation-timing-function: linear;
+        &:hover {
+          animation: moveB 200ms 150ms alternate linear;
+
+          opacity: 0.9;
+        }
+      }
+    }
+
+    &.active {
+      opacity: 1;
+
+      transition: $transtion1000ms;
+
+      transition-duration: 2s ease;
+    }
+  }
+
+  .next-btn,
+  .prev-btn {
+    position: absolute;
+    top: 45%;
+    padding: 2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: $transtionSecondary;
+    z-index: 200;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .next-btn {
+    right: 1rem;
+  }
+
+  .prev-btn {
+    left: 1rem;
+  }
+}
+
+@keyframes moveB {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}

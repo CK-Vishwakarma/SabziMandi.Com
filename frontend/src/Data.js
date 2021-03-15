@@ -27,6 +27,11 @@ import spinach2 from "./images/vegetables/spinach2.jpeg";
 import tomato from "./images/vegetables/tomato.jpeg";
 import ybPepper from "./images/vegetables/yellow-bell-pepper.jpeg";
 
+// carousel slider import here
+// import caro1 from "./images/adds/caro1.jpeg";
+import caro2 from "./images/adds/caro2.jpg";
+import caro3 from "./images/adds/caro3.jpg";
+import caro4 from "./images/adds/caro4.jpg";
 const data = {
   products: [
     {
@@ -340,3 +345,29 @@ const data = {
   ],
 };
 export default data;
+
+// carousel sliders here
+
+export const carouselSliders = [
+  {
+    id: "1",
+    sliderImage: caro2,
+    title: "Hygienic Stores",
+    subTitle: "Best practices followed to provide best of the best.",
+    btnName: "Explore",
+  },
+  {
+    id: "2",
+    sliderImage: caro3,
+    title: "Best Offers ",
+    subTitle: "Stay healthy while saving on Healthy Veggies. ",
+    btnName: "Explore",
+  },
+  {
+    id: "3",
+    sliderImage: caro4,
+    title: "Try New",
+    subTitle: "Enjoy some of the Rare Fruits/Veggies.",
+    btnName: "Explore",
+  },
+];

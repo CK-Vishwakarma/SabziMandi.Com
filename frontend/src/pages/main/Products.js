@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Products.scss";
 import ProductCard from "../../components/ProductCard";
 import data from "../../Data";
 import BackToTop from "../../components/BackToTop";

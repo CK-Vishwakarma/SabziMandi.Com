@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import "./Main.scss";
 import ErrorPage from "./ErrorPage";
 import Home from "./Home";
 import Contact from "./Contact";

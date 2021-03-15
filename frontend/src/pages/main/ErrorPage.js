@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./ErrorPage.scss";
 const ErrorPage = () => {
   return (
     <div className="container gridBox h-100">

@@ -4,10 +4,7 @@ import data from "../../../Data";
 import Rating from "../../../components/Rating";
 import { IoArrowBackCircle } from "react-icons/io5";
 import { BiRupee } from "react-icons/bi";
-import "./ProductScreen.scss";
 const ProductScreen = (props) => {
-  console.log(props);
-
   const singleProduct = data.products.find(
     (item) => item._id === props.match.params.id
   );
@@ -22,7 +19,6 @@ const ProductScreen = (props) => {
     quantity,
     category,
   } = singleProduct;
-  console.log(singleProduct);
   return (
     <div className="container py-1 ">
       <Link to="/products" className="goback-link">
@@ -60,7 +56,7 @@ const ProductScreen = (props) => {
           <p className="my-1">{description}</p>
           <div className="action-section ">
             <button className="btn buy-now">Buy Now</button>
-            <button className="btn add-to-cart">Add To CArd</button>
+            <button className="btn add-to-cart">Add To Card</button>
           </div>
         </div>
       </article>

@@ -1,2 +1,12 @@
-@import "./Variables.scss";
-@import "./Global.scss";
+@import "./Variables";
+@import "./Global";
+@import "./pages/header/Header";
+@import "./pages/main/Main";
+@import "./pages/main/Products";
+@import "./pages/main/ErrorPage";
+@import "./pages/main/screens/ProductScreen";
+@import "./pages/footer/Footer";
+@import "./components/Carousels";
+@import "./components/SearchForm";
+@import "./components/ProductCard";
+@import "./components/BackToTop";

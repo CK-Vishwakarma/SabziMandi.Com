@@ -3,7 +3,6 @@ import {
   IoIosArrowDropupCircle,
   IoIosArrowDropdownCircle,
 } from "react-icons/io";
-import "./BackToTop.scss";
 const BackToTop = () => {
   return (
     <div className="back-to-top-btn" title="back to top">

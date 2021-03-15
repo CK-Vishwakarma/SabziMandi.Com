@@ -2,7 +2,6 @@ import React from "react";
 import Rating from "./Rating";
 import { BiRupee } from "react-icons/bi";
 
-import "../components/ProductCard.scss";
 import { Link } from "react-router-dom";
 
 const SingleProductCard = ({ product }) => {
