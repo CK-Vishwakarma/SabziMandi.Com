@@ -1,0 +1,97 @@
+.deals {
+  margin: 5rem 0;
+  .deal-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+    place-items: center;
+  }
+  .deals-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: $DarkBlue;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: $font-lg;
+      color: $GrayishBlue;
+    }
+  }
+}
+
+.adds {
+  margin: 5rem 0;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.clients {
+  margin: 5rem 0;
+
+  .clients-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: $DarkBlue;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: $font-lg;
+      color: $GrayishBlue;
+    }
+  }
+  .clients-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+    .client-div {
+      background-color: $White;
+      padding: 1rem 1.5rem;
+      margin: 1rem 1rem;
+      text-align: center;
+      border-radius: 0.5rem;
+      .client-logo {
+        font-size: 4rem;
+        color: $DarkBlue;
+      }
+      p {
+        font-size: $font-med;
+        color: $GrayishBlue;
+      }
+    }
+  }
+}
+
+// media query
+@media screen and (min-width: 1024px) {
+  .adds {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    .col1 {
+      width: 100%;
+      display: grid;
+      place-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

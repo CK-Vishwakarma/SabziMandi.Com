@@ -10,6 +10,7 @@ import { GiMilkCarton } from "react-icons/gi";
 import { GrDeliver } from "react-icons/gr";
 import { BiStreetView } from "react-icons/bi";
 import { SiGooglemybusiness } from "react-icons/si";
+
 export const MenuItems = [
   {
     linkIcon: <BsFillHouseFill />,

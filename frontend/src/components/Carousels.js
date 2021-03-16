@@ -3,12 +3,11 @@ import { carouselSliders } from "../Data";
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from "react-icons/bs";
 
 const Carousels = () => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(3);
   const length = carouselSliders.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-    console.log(current);
   };
 
   const prevSlide = () => {
@@ -24,6 +23,7 @@ const Carousels = () => {
     }, 5000);
     return () => clearInterval(CarouselInterval);
   }, [current]);
+
   return (
     <div className="carousels">
       <button onClick={prevSlide} className="prev-btn">

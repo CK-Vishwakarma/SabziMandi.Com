@@ -16,6 +16,7 @@ body {
   font-weight: 300;
   height: 100vh;
   background-color: $VeryLightGray;
+  // background-color: $LightGrayishBlue;
 
   &::-webkit-scrollbar {
     display: none;
@@ -31,7 +32,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6rem 1fr 6rem;
+  grid-template-rows: 6rem 1fr 1fr;
   height: 100%;
   grid-template-areas: "headers" "main" "footer";
 }
@@ -60,6 +61,14 @@ a:hover {
 }
 ul {
   list-style: none;
+}
+hr {
+  width: 50%;
+  height: 0.3rem;
+  background-color: $GrayishBlue;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 4rem;
 }
 /*===================
   Reuseable Divs
@@ -269,6 +278,8 @@ h6 {
   border: none;
   box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.5);
   opacity: 1;
+  user-select: none;
+  transition: $transtionSecondary;
   cursor: pointer;
   &:hover {
     background: $LGblueAndGreen;

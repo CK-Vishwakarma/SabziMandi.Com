@@ -32,6 +32,14 @@ import ybPepper from "./images/vegetables/yellow-bell-pepper.jpeg";
 import caro2 from "./images/adds/caro2.jpg";
 import caro3 from "./images/adds/caro3.jpg";
 import caro4 from "./images/adds/caro4.jpg";
+
+// clients list
+import { FaHotjar } from "react-icons/fa";
+import { FaGulp } from "react-icons/fa";
+import { FaKickstarterK } from "react-icons/fa";
+import { FaCheese } from "react-icons/fa";
+import { FaFish } from "react-icons/fa";
+
 const data = {
   products: [
     {
@@ -44,6 +52,7 @@ const data = {
       rating: 2.5,
       numReviews: 110,
       description: "fresh apples directly available from farm",
+      deals: true,
     },
     {
       _id: "2",
@@ -66,6 +75,7 @@ const data = {
       rating: 4.1,
       numReviews: 28,
       description: "fresh black grapes directly available from farm",
+      deals: true,
     },
     {
       _id: "4",
@@ -121,6 +131,7 @@ const data = {
       rating: 4.2,
       numReviews: 99,
       description: "fresh mangoes directly available from farm",
+      deals: true,
     },
     {
       _id: "9",
@@ -132,6 +143,7 @@ const data = {
       rating: 4.4,
       numReviews: 123,
       description: "fresh oranges directly available from farm",
+      deals: true,
     },
     {
       _id: "10",
@@ -253,6 +265,7 @@ const data = {
       rating: 5,
       numReviews: 375,
       description: "fresh green capsicum directly available from farm",
+      deals: true,
     },
     {
       _id: "21",
@@ -275,6 +288,7 @@ const data = {
       rating: 4.7,
       numReviews: 269,
       description: "fresh lemons directly available from farm",
+      deals: true,
     },
     {
       _id: "23",
@@ -344,6 +358,8 @@ const data = {
     },
   ],
 };
+
+//main product data here
 export default data;
 
 // carousel sliders here
@@ -369,5 +385,40 @@ export const carouselSliders = [
     title: "Try New",
     subTitle: "Enjoy some of the Rare Fruits/Veggies.",
     btnName: "Explore",
+  },
+  {
+    id: "4",
+    sliderImage: caro4,
+    title: "Try Ngs;djgs;gjldlf.,bnx,bnxfb,xkblbkew",
+    subTitle: "kldsldkgslkghslglgklsdsgdEnjoy some of the Rare Fruits/Veggies.",
+    btnName: "Explore",
+  },
+];
+
+export const clientList = [
+  {
+    _id: "1",
+    logo: <FaHotjar />,
+    name: "Hotel Suruchi",
+  },
+  {
+    _id: "2",
+    logo: <FaGulp />,
+    name: "Juice Fresh",
+  },
+  {
+    _id: "3",
+    logo: <FaKickstarterK />,
+    name: "Kids Corner",
+  },
+  {
+    _id: "4",
+    logo: <FaCheese />,
+    name: "Chanchal Bakery",
+  },
+  {
+    _id: "5",
+    logo: <FaFish />,
+    name: "Healthy Non-Veg",
   },
 ];
