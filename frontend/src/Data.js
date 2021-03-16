@@ -386,13 +386,6 @@ export const carouselSliders = [
     subTitle: "Enjoy some of the Rare Fruits/Veggies.",
     btnName: "Explore",
   },
-  {
-    id: "4",
-    sliderImage: caro4,
-    title: "Try Ngs;djgs;gjldlf.,bnx,bnxfb,xkblbkew",
-    subTitle: "kldsldkgslkghslglgklsdsgdEnjoy some of the Rare Fruits/Veggies.",
-    btnName: "Explore",
-  },
 ];
 
 export const clientList = [

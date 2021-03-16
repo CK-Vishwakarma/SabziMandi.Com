@@ -79,15 +79,19 @@ const Home = () => {
         <div className="container ">
           <div className="adds">
             <div className="col1  ">
-              <img src={colAdd1} alt="add" />
+              <Link to="/products">
+                <img src={colAdd1} alt="add" />
+              </Link>
             </div>
             <div className="col1">
-              <img src={colAdd2} alt="add" />
+              <Link to="/products">
+                <img src={colAdd2} alt="add" />
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="container-full ">
+      <div className="container-full  ">
         <div className="container">
           <div className="clients">
             <section className="clients-heading">

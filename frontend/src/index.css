@@ -1442,7 +1442,7 @@ h6 {
   display: grid;
   -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 5rem;
+  gap: 2rem;
   place-items: center;
 }
 
@@ -1507,7 +1507,10 @@ h6 {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #f3f4f6;
   gap: 1rem;
+  padding: 3rem;
+  min-height: 20rem;
 }
 
 .clients .clients-logos .client-div {
@@ -1516,6 +1519,11 @@ h6 {
   margin: 1rem 1rem;
   text-align: center;
   border-radius: 0.5rem;
+  min-height: 10rem;
+  min-width: 15rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .clients .clients-logos .client-div .client-logo {
@@ -1529,6 +1537,9 @@ h6 {
 }
 
 @media screen and (min-width: 1024px) {
+  .deals .deal-products {
+    gap: 4rem;
+  }
   .adds {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2726,9 +2737,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   margin-bottom: 01.5rem;
 }
 
@@ -3450,7 +3461,7 @@ h6 {
   .carousels .next-btn,
   .carousels .prev-btn {
     top: initial;
-    bottom: 1rem;
+    bottom: 5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
   }
@@ -3573,9 +3584,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   margin-bottom: 01.5rem;
 }
 

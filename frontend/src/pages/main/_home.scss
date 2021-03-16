@@ -3,7 +3,7 @@
   .deal-products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 5rem;
+    gap: 2rem;
     place-items: center;
   }
   .deals-heading {
@@ -56,14 +56,20 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    background-color: $LightGrayishBlue;
     gap: 1rem;
+    padding: 3rem;
+    min-height: 20rem;
     .client-div {
       background-color: $White;
       padding: 1rem 1.5rem;
       margin: 1rem 1rem;
       text-align: center;
       border-radius: 0.5rem;
+      min-height: 10rem;
+      min-width: 15rem;
+      display: grid;
+      place-items: center;
       .client-logo {
         font-size: 4rem;
         color: $DarkBlue;
@@ -78,6 +84,11 @@
 
 // media query
 @media screen and (min-width: 1024px) {
+  .deals {
+    .deal-products {
+      gap: 4rem;
+    }
+  }
   .adds {
     display: flex;
     width: 100%;
