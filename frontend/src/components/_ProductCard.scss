@@ -1,5 +1,3 @@
-
-
 /*=================
     Single Product Card
     ========================*/
@@ -48,54 +46,63 @@
     }
   }
 
-  .card-details {
-    text-transform: capitalize;
-    // padding: 0 1rem;
-    .card-title {
-      font-size: $font-default;
-      color: $titleCol;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    .card-categoty {
-      font-size: $font-med;
-      margin-bottom: 0.5rem;
-    }
-    .card-rating {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      margin-bottom: 01.5rem;
-
-      .card-rating-design {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        background-color: $White;
-        padding: 0.7rem 1rem;
-        border-bottom: 01rem solid $success-g;
-        border-radius: 0.5rem;
-        font-size: $font-med;
-        font-weight: 400;
-        min-width: 4rem;
-        display: grid;
-        place-items: center;
-      }
-      .card-reviews {
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .card-details {
+      text-transform: capitalize;
+      // padding: 0 1rem;
+      .card-title {
+        font-size: $font-default;
+        color: $titleCol;
         &:hover {
           text-decoration: underline;
         }
       }
-      > span {
-        margin-right: 1rem;
+      .card-categoty {
+        font-size: $font-med;
+        margin-bottom: 0.5rem;
+      }
+      .card-rating {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 01.5rem;
+
+        .card-rating-design {
+          position: absolute;
+          top: 2rem;
+          left: 2rem;
+          background-color: $White;
+          padding: 0.7rem 1rem;
+          border-bottom: 01rem solid $success-g;
+          border-radius: 0.5rem;
+          font-size: $font-med;
+          font-weight: 400;
+          min-width: 4rem;
+          display: grid;
+          place-items: center;
+        }
+        .card-reviews {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        > span {
+          margin-right: 1rem;
+        }
+      }
+      .card-price {
+        font-size: $font-xlg;
+        strong {
+          font-weight: 500;
+        }
       }
     }
-    .card-price {
-      font-size: $font-xlg;
-      strong {
-        font-weight: 500;
-      }
+    .add-to-cart-btn {
+      padding: 1rem 2rem;
+      background-color: $success-g;
     }
   }
 }

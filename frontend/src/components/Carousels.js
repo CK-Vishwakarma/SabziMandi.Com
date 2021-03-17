@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { carouselSliders } from "../Data";
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Carousels = () => {
-  const [current, setCurrent] = useState(3);
+  const [current, setCurrent] = useState(0);
   const length = carouselSliders.length;
 
   const nextSlide = () => {
@@ -46,7 +47,9 @@ const Carousels = () => {
                 <div className="slider-info">
                   <h1>{slider.title}</h1>
                   <p>{slider.subTitle}</p>
-                  <button className="btn">{slider.btnName}</button>
+                  <Link to="/products" className="btn">
+                    {slider.btnName}
+                  </Link>
                 </div>
               </>
             )}

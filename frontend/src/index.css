@@ -316,10 +316,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -338,8 +336,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -678,10 +674,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -700,8 +694,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -1383,10 +1375,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -1405,8 +1395,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -1882,10 +1870,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -1904,8 +1890,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -2280,10 +2264,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -2302,8 +2284,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -2642,10 +2622,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -2664,8 +2642,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -2737,9 +2713,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: flex-start;
-      -ms-flex-pack: flex-start;
-          justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-bottom: 01.5rem;
 }
 
@@ -3182,10 +3158,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   padding: 0.6rem 2rem;
   border-radius: 0.8rem;
@@ -3204,8 +3178,6 @@ h6 {
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#2bb7da), to(#31d35c));
-  background: linear-gradient(to right, #2bb7da, #31d35c);
   opacity: 0.85;
 }
 
@@ -3371,7 +3343,7 @@ h6 {
   font-weight: 400;
 }
 
-.carousels .slider-div .slider-info button {
+.carousels .slider-div .slider-info a {
   padding: 1.2rem 3.5rem;
   font-size: 1.5rem;
   border-radius: 0.5rem;
@@ -3382,7 +3354,7 @@ h6 {
   background: white;
 }
 
-.carousels .slider-div .slider-info button:hover {
+.carousels .slider-div .slider-info a:hover {
   -webkit-animation: moveB 200ms 150ms alternate linear;
           animation: moveB 200ms 150ms alternate linear;
   opacity: 0.9;
@@ -3559,38 +3531,49 @@ h6 {
           transform: scale(1);
 }
 
-.product-card .card-details {
-  text-transform: capitalize;
-}
-
-.product-card .card-details .card-title {
-  font-size: 1.8rem;
-  color: black;
-}
-
-.product-card .card-details .card-title:hover {
-  text-decoration: underline;
-}
-
-.product-card .card-details .card-categoty {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.product-card .card-details .card-rating {
+.product-card .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: flex-start;
-      -ms-flex-pack: flex-start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.product-card .card .card-details {
+  text-transform: capitalize;
+}
+
+.product-card .card .card-details .card-title {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.product-card .card .card-details .card-title:hover {
+  text-decoration: underline;
+}
+
+.product-card .card .card-details .card-categoty {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .card .card-details .card-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-bottom: 01.5rem;
 }
 
-.product-card .card-details .card-rating .card-rating-design {
+.product-card .card .card-details .card-rating .card-rating-design {
   position: absolute;
   top: 2rem;
   left: 2rem;
@@ -3606,20 +3589,25 @@ h6 {
   place-items: center;
 }
 
-.product-card .card-details .card-rating .card-reviews:hover {
+.product-card .card .card-details .card-rating .card-reviews:hover {
   text-decoration: underline;
 }
 
-.product-card .card-details .card-rating > span {
+.product-card .card .card-details .card-rating > span {
   margin-right: 1rem;
 }
 
-.product-card .card-details .card-price {
+.product-card .card .card-details .card-price {
   font-size: 2.2rem;
 }
 
-.product-card .card-details .card-price strong {
+.product-card .card .card-details .card-price strong {
   font-weight: 500;
+}
+
+.product-card .card .add-to-cart-btn {
+  padding: 1rem 2rem;
+  background-color: #249449;
 }
 
 /*=================
@@ -3643,5 +3631,289 @@ h6 {
   font-size: 5rem;
   cursor: pointer;
   z-index: 80;
+}
+
+.form-center {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  margin-bottom: 5rem;
+}
+
+.form-center h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2d314d;
+  margin-bottom: 1rem;
+}
+
+.form-center p {
+  font-weight: 400;
+  text-align: center;
+  color: #9698a6;
+  margin-bottom: 3.5rem;
+}
+
+.form-center .sign-up-form {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 4rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-center .sign-up-form .form-col-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 0 1rem;
+  height: 6rem;
+}
+
+.form-center .sign-up-form .form-col-div .form-group {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.form-center .sign-up-form .form-col-div .form-group > label {
+  position: absolute;
+  top: -0.7rem;
+  left: 0.65rem;
+  color: #0052cc;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-weight: 400;
+}
+
+.form-center .sign-up-form .form-col-div .form-group input {
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.form-center .sign-up-form .form-group {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.form-center .sign-up-form .form-group label {
+  position: absolute;
+  top: -0.7rem;
+  left: 0.65rem;
+  color: #0052cc;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-weight: 400;
+  pointer-events: none;
+  cursor: text;
+}
+
+.form-center .sign-up-form .form-group input {
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 1rem;
+  font-size: 1.4rem;
+  color: #2d314d;
+  border-radius: 0.5rem;
+  border: 1.8px solid #9698a6;
+  outline: none;
+}
+
+.form-center .sign-up-form .form-group input:focus {
+  border: 2px solid #0052cc;
+}
+
+.form-center .sign-up-form .form-group .inp-btn {
+  background-color: #0052cc;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  height: 5rem;
+}
+
+.form-center .sign-up-form h4 {
+  font-weight: 400;
+  text-align: center;
+  color: #9698a6;
+}
+
+.form-center .sign-up-form h4 span {
+  color: #0052cc;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .form-center h1 {
+    font-size: 3.5rem;
+  }
+  .form-center p {
+    margin-bottom: 1rem;
+  }
+  .form-center .sign-up-form {
+    padding: 3rem 0rem;
+  }
+  .form-center .sign-up-form .form-col-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem 0;
+    margin: 4rem 0;
+  }
+  .form-center .sign-up-form .form-col-div .form-group {
+    width: 100%;
+  }
+}
+
+.form-center {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  margin-bottom: 5rem;
+}
+
+.form-center h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2d314d;
+  margin-bottom: 2rem;
+}
+
+.form-center p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #9698a6;
+  margin-bottom: 3.5rem;
+}
+
+.form-center p span {
+  color: #0052cc;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 0.2rem;
+}
+
+.form-center .login-form {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 4rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-center .login-form .form-group {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.form-center .login-form .form-group label {
+  position: absolute;
+  top: -0.7rem;
+  left: 0.65rem;
+  color: #0052cc;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-weight: 400;
+  pointer-events: none;
+  cursor: text;
+}
+
+.form-center .login-form .form-group input {
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 1rem;
+  font-size: 1.4rem;
+  color: #2d314d;
+  border-radius: 0.5rem;
+  border: 1.8px solid #9698a6;
+  outline: none;
+}
+
+.form-center .login-form .form-group input:focus {
+  border: 2px solid #0052cc;
+}
+
+.form-center .login-form .form-group .inp-btn {
+  background-color: #0052cc;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  height: 5rem;
+}
+
+.form-center .login-form h4 {
+  font-weight: 400;
+  text-align: center;
+  color: #9698a6;
+}
+
+.form-center .login-form h4 span {
+  color: #0052cc;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .form-center h1 {
+    font-size: 3.5rem;
+  }
+  .form-center p {
+    margin-bottom: 1rem;
+  }
+  .form-center .login-form {
+    padding: 3rem 1rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

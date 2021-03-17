@@ -13,22 +13,25 @@ const SingleProductCard = ({ product }) => {
           <div className="product-card-frame">
             <img src={image} alt={name} className="product-card-img" />
           </div>
-          <div className="card-details">
-            <Link to={`products/product${_id}`}>
-              <h1 className="card-title">{name}</h1>
-            </Link>
-            <p className="card-categoty">{category}</p>
-            <div className="card-rating">
-              <span className="card-rating-design">{rating}</span>
-              <span>
-                <Rating rating={rating} />
-              </span>
-              <span className="card-reviews">{numReviews} Reviews</span>
+          <div className="card">
+            <div className="card-details">
+              <Link to={`products/product${_id}`}>
+                <h1 className="card-title">{name}</h1>
+              </Link>
+              <p className="card-categoty">{category}</p>
+              <div className="card-rating">
+                <span className="card-rating-design">{rating}</span>
+                <span>
+                  <Rating rating={rating} />
+                </span>
+                <span className="card-reviews">{numReviews} Reviews</span>
+              </div>
+              <div className="card-price flexBox">
+                <BiRupee />
+                <strong>{price}/Kg</strong>
+              </div>
             </div>
-            <div className="card-price flexBox">
-              <BiRupee />
-              <strong>{price}/Kg</strong>
-            </div>
+            <button className="btn add-to-cart-btn">Add To Cart</button>
           </div>
         </Link>
       </article>

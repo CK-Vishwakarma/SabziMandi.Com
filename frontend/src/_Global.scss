@@ -267,9 +267,9 @@ h6 {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $LGgreenAndBlue;
+  // background: $LGgreenAndBlue;
   font-size: $font-sm;
-  font-weight: 400;
+  font-weight: 500;
   color: $White;
   // margin: 0.8rem 1rem;
   padding: 0.6rem 2rem;
@@ -282,7 +282,7 @@ h6 {
   transition: $transtionSecondary;
   cursor: pointer;
   &:hover {
-    background: $LGblueAndGreen;
+    // background: $LGblueAndGreen;
     opacity: 0.85;
   }
   &:active {
